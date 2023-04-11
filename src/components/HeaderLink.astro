@@ -4,7 +4,6 @@ import type { HTMLAttributes } from 'astro/types';
 type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
-
 const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 ---
@@ -14,8 +13,10 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 </a>
 <style>
 	a {
-		display: inline-block;
+		display: inline-flex;
 		text-decoration: none;
+    align-items: center;
+    gap: 4px;
 	}
 	a.active {
 		font-weight: bolder;
