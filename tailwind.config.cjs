@@ -5,9 +5,10 @@ module.exports = {
 	theme: {
 		extend: {
       fontFamily: {
-        satoshi: ["'Satoshi'", 'Verdana', "sans-serif"]
+        satoshi: ["'Satoshi'", 'Verdana', "sans-serif"],
+        zodiak: ["'Zodiak'", 'serif']
       }
     },
 	},
-	plugins: [],
+	plugins: []
 }

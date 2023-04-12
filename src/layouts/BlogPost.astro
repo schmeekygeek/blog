@@ -24,13 +24,15 @@ const {
 
 <!DOCTYPE html>
 <html lang="en">
-  <BaseHead title={title + ` / ${SITE_TITLE}`} description={description} image={heroImage} />
+  <head>
+    <BaseHead title={title + ` / ${SITE_TITLE}`} description={description} image={heroImage} />
+  </head>
 
   <Body>
     <Header />
-    <main class="pt-[56px]">
-      <Content className="pt-6">
-        <div class="mx-8">
+    <main class="pt-[56px] mx-8">
+      <Content className="pt-6 mx-8">
+        <div class="mb-8 mx-8">
           {
             heroImage && (
               <img
