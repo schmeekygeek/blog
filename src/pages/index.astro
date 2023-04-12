@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import Body from '../components/Body.astro';
 import Masthead from '../components/Masthead.astro';
 import { Image } from '@astrojs/image/components';
+import Content from '../components/Content.astro';
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
@@ -23,6 +24,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
     <Header />
     <Masthead />
     <main class="pt-[56px]">
+      <Content>
         <section>
           <p class="mx-4 indent-4">
             todo: add introduction
