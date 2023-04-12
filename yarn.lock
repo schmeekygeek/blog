@@ -15,6 +15,14 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@astrojs/cloudflare@^6.2.2":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/cloudflare/-/cloudflare-6.2.2.tgz#0e113f4902aad16256a5d44826a177dba851f930"
+  integrity sha512-Z/twtIM68TwazHGLax05WcADsR6oDVFiq21TMTfEsWOmhoVzTTPwxiU8kw8gukGrwug8JwLiiAeK7qFDZNmFcw==
+  dependencies:
+    esbuild "^0.17.12"
+    tiny-glob "^0.2.9"
+
 "@astrojs/compiler@^0.31.3":
   version "0.31.4"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.31.4.tgz#fa5aaeb3e6f3640f6f7625849b724a4d28d662e4"
@@ -1395,7 +1403,7 @@ es-module-lexer@^1.1.0:
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.2.1.tgz#ba303831f63e6a394983fde2f97ad77b22324527"
   integrity sha512-9978wrXM50Y4rTMmW5kXIC09ZdXQZqkE4mxhwkd8VbzsGkXGPgV4zWuqQJgCEzYngdo2dYDa0l8xhX4fkSwJSg==
 
-esbuild@^0.17.5:
+esbuild@^0.17.12, esbuild@^0.17.5:
   version "0.17.16"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.17.16.tgz#5efec24a8ff29e0c157359f27e1b5532a728b720"
   integrity sha512-aeSuUKr9aFVY9Dc8ETVELGgkj4urg5isYx8pLf4wlGgB0vTFjxJQdHnNH6Shmx4vYYrOTLCHtRI5i1XZ9l2Zcg==

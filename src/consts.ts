@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'schmeekydev blog';
 export const SITE_DESCRIPTION = 'My personal blog';
-export const HOMEPAGE_URL = 'https://www.schmeeky.dev';
+export const HOMEPAGE_URL = 'https://schmeeky.pages.dev';

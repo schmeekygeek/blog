@@ -29,6 +29,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
           <p class="mx-4 indent-4">
             todo: add introduction
           </p>
+          <br />
         </section>
         <section>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -43,7 +44,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
                       width={720*2} 
                       aspectRatio={2.0} 
                       alt="Thumbnail"/>
-                    <div class="mt-4 text-xl font-bold">
+                    <div class="mt-4 text-xl font-satoshi font-400">
                       {post.frontmatter.title}
                     </div>
                     {post.frontmatter.description && (
