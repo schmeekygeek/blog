@@ -1,13 +1,13 @@
 ---
 title: Spring CLI
-description: A command-line bash script to initialize Spring-Boot projects right from your terminal
+description: Script to initialize Spring-Boot projects right from your terminal
 slug: spring-cli
 public: true
 layout: ../../layouts/BlogPost.astro
 createdAt: July 20 2022
 tags:
-  - project
+  - Projects
 heroImage: /posts/spring-cli.png
 ---
 
-
+My name is abdul samad shaikh and i like to play football
