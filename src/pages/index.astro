@@ -9,7 +9,7 @@ import { Image } from '@astrojs/image/components';
 import Content from '../components/Content.astro';
 import Head from '../components/Head.astro';
 import HeaderLink from '../components/HeaderLink.astro';
-import { IoLogoGithub } from 'react-icons/io5';
+import { IoLogoGithub } from 'react-icons/io5/index.js';
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
