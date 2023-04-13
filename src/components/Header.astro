@@ -3,6 +3,7 @@ import HeaderLink from './HeaderLink.astro';
 import { HOMEPAGE_URL } from '../consts';
 import { IoLogoGithub } from 'react-icons/io5/index.js';
 import ThemeToggle from './ThemeToggleButton';
+import DropdownMenu from './DropdownMenu';
 ---
 
 <header class="fixed w-full p-2 z-20 backdrop-blur-md">
@@ -19,6 +20,7 @@ import ThemeToggle from './ThemeToggleButton';
       </div>
       <div class="flex-1"></div>
       <ThemeToggle client:only/>
+      <DropdownMenu client:only/>
     </nav>
   </div>
 </header>

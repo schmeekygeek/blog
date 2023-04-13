@@ -18,7 +18,7 @@ export interface Props {
 }
 
 const {
-  content: { title, description, heroImage }
+  content: { title, description, heroImage, createdAt }
 } = Astro.props
 ---
 
@@ -48,6 +48,7 @@ const {
         <h1 class="text-3xl my-1 font-satoshi">{title}</h1>
         <div>{description}</div>
         <hr class="border-top border-zinc-400 my-4" />
+        <div>{createdAt}</div>
         <slot />
         <span
           class="underline underline-offset-2 hover:text-orange-500 decoration-orange-500 text-2xl list-disc"

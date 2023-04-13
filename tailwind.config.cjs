@@ -5,8 +5,7 @@ module.exports = {
 	theme: {
 		extend: {
       fontFamily: {
-        satoshi: ["'Satoshi'", 'Verdana', "sans-serif"],
-        zodiak: ["'Zodiak'", 'serif']
+        satoshi: ['Satoshi', 'sans-serif']
       }
     },
 	},

@@ -4,10 +4,10 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-@import url("https://api.fontshare.com/v2/css?f[]=satoshi@500,400&f[]=zodiak@400&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,600&display=swap");
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Satoshi' , Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Satoshi', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word;

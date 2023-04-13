@@ -7,7 +7,7 @@ import addClasses from 'rehype-add-classes';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.schmeeky.dev',
+  site: 'https://schmeeky.pages.dev',
   integrations: [sitemap(), react(), image(), tailwind()],
   markdown: {
     extendDefaultPlugins: true,

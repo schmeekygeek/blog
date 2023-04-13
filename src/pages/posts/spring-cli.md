@@ -6,6 +6,8 @@ public: true
 layout: ../../layouts/BlogPost.astro
 createdAt: July 20 2022
 tags:
-  - Project
+  - project
 heroImage: /posts/spring-cli.png
 ---
+
+
