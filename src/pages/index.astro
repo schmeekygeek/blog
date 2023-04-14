@@ -7,8 +7,6 @@ import Body from '../components/Body.astro';
 import Masthead from '../components/Masthead.astro';
 import Content from '../components/Content.astro';
 import Head from '../components/Head.astro';
-import HeaderLink from '../components/HeaderLink.astro';
-import { IoLogoGithub } from 'react-icons/io5/index.js';
 import BlogListTile from '../components/BlogListTile.astro';
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
@@ -35,9 +33,15 @@ posts.splice(0, 1);
     <main class="pt-[16px]">
       <Content>
         <section>
-          <HeaderLink href="https://github.com/schmeekygeek" target="_blank"><IoLogoGithub /> Visit GitHub</HeaderLink>
           <p class="text-xl">
-            Welcome to my blog. This is where I write about the projects that I built, the lessons that I learned from building them, tutorials, guides and other topics that I like to pen my thoughts on.
+            Welcome to my 
+            <span class="dark:text-rosePine-gold text-rosePineDawn-gold">Blog.</span>
+            <br />
+            This is where I write about the 
+            <span class="dark:text-rosePine-gold text-rosePineDawn-gold">projects</span>
+            that I built, the lessons that I learned from building them, 
+            <span class="dark:text-rosePine-gold text-rosePineDawn-gold">tutorials, guides</span>
+            and other topics that I like to pen my thoughts on.
           </p>
         </section>
         <br />

@@ -1,7 +1,4 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { HOMEPAGE_URL } from '../consts';
-import { IoLogoGithub } from 'react-icons/io5/index.js';
 import ThemeToggle from './ThemeToggleButton';
 import DropdownMenu from './DropdownMenu';
 
@@ -13,18 +10,14 @@ allPosts.map(post => {
 })
 ---
 
-<header class="fixed w-full p-2 z-20 backdrop-blur-md">
+<header class="fixed w-full p-3 z-20 backdrop-blur-md">
   <div class="mx-auto max-w-3xl">
     <nav class="flex items-center gap-3 text-base">
       <a href="/">
-        <h2 class="font-Medium tracking-loose p-2 font-satoshi">
+        <h2 class="font-3xl tracking-loose p-2 font-satoshi">
           SchmeekyDev
         </h2>
       </a>
-      <div class="items-center gap-6 hidden md:flex">
-        <HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
-        <HeaderLink href="https://github.com/withastro/astro" target="_blank"><IoLogoGithub /> Source</HeaderLink>
-      </div>
       <div class="flex-1"></div>
       <ThemeToggle client:only/>
       <DropdownMenu client:visible tags={Array.from(allTags)} />
