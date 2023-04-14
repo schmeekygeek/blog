@@ -5,11 +5,11 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import Body from '../components/Body.astro';
 import Masthead from '../components/Masthead.astro';
-import { Image } from '@astrojs/image/components';
 import Content from '../components/Content.astro';
 import Head from '../components/Head.astro';
 import HeaderLink from '../components/HeaderLink.astro';
 import { IoLogoGithub } from 'react-icons/io5/index.js';
+import BlogListTile from '../components/BlogListTile.astro';
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
@@ -37,35 +37,19 @@ posts.splice(0, 1);
         <section>
           <HeaderLink href="https://github.com/schmeekygeek" target="_blank"><IoLogoGithub /> Visit GitHub</HeaderLink>
           <p class="text-xl">
-            Welcome to my blog. This is where I write about the projects that I built, the lessons that I learned from them, tutorials, guides and other topics that I like to pen my thoughts on.
+            Welcome to my blog. This is where I write about the projects that I built, the lessons that I learned from building them, tutorials, guides and other topics that I like to pen my thoughts on.
           </p>
         </section>
         <br />
         <section>
           <Head>Latest Post</Head>
-          <a href={latestPost.url}>
-            <div class="mb-2 opacity-70 text-base font-satoshi">
-              Published on {latestPost.frontmatter.createdAt}
-            </div>
-            <Image 
-              class="border border-slate-300 dark:border-zinc-700 rounded-xl" 
-              src={latestPost.frontmatter.heroImage} 
-              format ='jpg' 
-              width={720*2} 
-              aspectRatio={2.0} 
-              alt="Thumbnail"/>
-            <div class="mt-4 text-2xl font-satoshi font-400">
-              {latestPost.frontmatter.title}
-            </div>
-            {latestPost.frontmatter.description && (
-              <div class="opacity-70 text-lg">
-                {latestPost.frontmatter.description}
-              </div>
-            )}
-          </a>
-        <span
-          class="underline underline-offset-2 hover:text-orange-500 decoration-orange-500 text-2xl list-disc"
-        ></span>
+          <BlogListTile 
+            title={latestPost.frontmatter.title}
+            description={latestPost.frontmatter.description}
+            heroImage={latestPost.frontmatter.heroImage}
+            publishedOn={latestPost.frontmatter.createdAt}
+            url={latestPost.url}
+          />
         </section>
         <br />
         <Head>Projects</Head>
@@ -73,25 +57,12 @@ posts.splice(0, 1);
           {
             projects.map(post => {
               return <li class="text-center mx-8">
-                <a href={post.url}>
-                  <Image
-                    class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                    src={post.frontmatter.heroImage}
-                    fit='outside'
-                    format='jpg'
-                    width={720 * 2}
-                    aspectRatio={2.0}
-                    alt="Thumbnail"
-                  />
-                  <div class="mt-4 text-xl font-satoshi font-400">
-                    {post.frontmatter.title}
-                  </div>
-                  {post.frontmatter.description && (
-                    <div class="mb-4 opacity-70">
-                      {post.frontmatter.description}
-                    </div>
-                  )}
-                </a>
+                <BlogListTile 
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  heroImage={post.frontmatter.heroImage}
+                  url={post.url}
+                />
               </li>;
             })
           }
@@ -102,25 +73,13 @@ posts.splice(0, 1);
           {
             tutorials.map(post => {
               return <li class="text-center mx-8">
-                <a href={post.url}>
-                  <Image
-                    class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                    src={post.frontmatter.heroImage}
-                    fit='inside'
-                    format='jpg'
-                    width={720 * 2}
-                    aspectRatio={2.0}
-                    alt="Thumbnail"
-                  />
-                 <div class="mt-4 text-xl font-satoshi font-400">
-                    {post.frontmatter.title}
-                  </div>
-                  {post.frontmatter.description && (
-                    <div class="mb-4 opacity-70">
-                      {post.frontmatter.description}
-                    </div>
-                  )}
-                </a>
+                <BlogListTile 
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  heroImage={post.frontmatter.heroImage}
+                  publishedOn={post.frontmatter.createdAt}
+                  url={post.url}
+                />
               </li>;
             })
           }
@@ -131,25 +90,13 @@ posts.splice(0, 1);
           {
             casual.map(post => {
               return <li class="text-center mx-8">
-                <a href={post.url}>
-                  <Image
-                    class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                    format='jpg'
-                    fit='fill'
-                    src={post.frontmatter.heroImage}
-                    width={720 * 2}
-                    aspectRatio={2.0}
-                    alt="Thumbnail"
-                  />
-                 <div class="mt-4 text-xl font-satoshi font-400">
-                    {post.frontmatter.title}
-                  </div>
-                  {post.frontmatter.description && (
-                    <div class="mb-4 opacity-70">
-                      {post.frontmatter.description}
-                    </div>
-                  )}
-                </a>
+                <BlogListTile 
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  heroImage={post.frontmatter.heroImage}
+                  publishedOn={post.frontmatter.createdAt}
+                  url={post.frontmatter.url}
+                />
               </li>;
             })
           }
