@@ -22,13 +22,13 @@ const { url, title, description, publishedOn, heroImage } = Astro.props;
     alt="Thumbnail"/>
 {
   typeof publishedOn != 'undefined' ? 
-  <div class="inline-block bg-teal-200 text-teal-800 text-100 px-2 rounded-full font-semibold tracking-wide mb-1">
+  <div class="antialiased inline-block bg-teal-200 text-teal-800 text-100 px-2 rounded-full font-semibold tracking-wide mb-1">
     Published on {publishedOn}
   </div>
   :
-  <section></section>
+  <section />
   }
-  <div class="text-3xl font-satoshi font-bold">
+  <div class="font-medium text-3xl font-satoshi">
     {title}
   </div>
   <div class="opacity-70 text-lg">
