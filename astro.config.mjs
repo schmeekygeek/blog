@@ -15,7 +15,7 @@ export default defineConfig({
       [
         addClasses,
         {
-          h1: 'text-4xl font-satoshi font-semibold',
+          h1: 'text-rosePine-text text-4xl font-satoshi font-semibold',
           h2: 'text-2xl font-satoshi font-semibold',
           h3: 'text-xl font-satoshi font-semibold',
           h4: 'text-lg font-satoshi font-semibold',
