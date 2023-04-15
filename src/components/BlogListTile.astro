@@ -14,21 +14,22 @@ const { url, title, description, publishedOn, heroImage } = Astro.props;
 <a href={url}>
   <Image
     class="mb-4 border border-slate-300 dark:border-zinc-700 rounded-xl" 
-    src={heroImage} 
+    src={import(/* @vite-ignore */'../../public/posts/' + heroImage)} 
+    fit="fill"
     format ='jpg' 
-    width={720*2} 
-    height={720} 
-    aspectRatio={2.0} 
+    position='centre'
+    height={680} 
+    width={1100} 
     alt="Thumbnail"/>
 {
   typeof publishedOn != 'undefined' ? 
-  <div class="antialiased inline-block bg-teal-200 text-teal-800 text-100 px-2 rounded-full font-semibold tracking-wide mb-1">
+  <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay bg-rosePine-rose text-rosePine-overlay text-100 px-2 rounded-full font-semibold tracking-wide mb-2">
     Published on {publishedOn}
   </div>
   :
   <section />
   }
-  <div class="font-medium text-3xl font-satoshi">
+  <div class="font-medium text-3xl font-cabinet">
     {title}
   </div>
   <div class="opacity-70 text-lg">

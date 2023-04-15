@@ -35,7 +35,7 @@ posts.splice(0, 1);
     <Header />
     <Masthead />
     <main class="pt-[16px]">
-      <Content>
+      <Content className="not-prose">
         <section>
           <p class="text-xl">
             Welcome to my
@@ -114,7 +114,7 @@ posts.splice(0, 1);
                     description={post.frontmatter.description}
                     heroImage={post.frontmatter.heroImage}
                     publishedOn={post.frontmatter.createdAt}
-                    url={post.frontmatter.url}
+                    url={post.url}
                   />
                 </li>
               );

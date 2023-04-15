@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro'
 import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
 import { SITE_TITLE } from '../consts'
+import { Image } from '@astrojs/image/components'
 
 export interface Props {
   content: {
@@ -31,24 +32,21 @@ const {
   <Body>
     <Header />
     <main class="pt-[56px]">
-      <Content className="prose align-center pt-6">
+      <Content className="prose dark:prose-invert align-center">
         <div class="mb-8">
-          {
-            heroImage && (
-              <img
-                class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                width={720}
-                height={360}
-                src={heroImage}
-                alt=""
-              />
-            )
-          }
+          <Image
+            class="border border-slate-300 dark:border-zinc-700 rounded-xl"
+            height={680} 
+            width={1100} 
+            format="jpg"
+            aspectRatio={2.0}
+            src={import('../../public/posts/' + heroImage)} 
+            alt=""
+          />
         </div>
-        <div class="inline-block bg-teal-200 text-teal-800 text-100 px-2 rounded-full font-semibold tracking-wide mb-1">Published on {createdAt}</div>
-        <h1 class="text-3xl my-1 font-satoshi">{title}</h1>
-        <div>{description}</div>
-        <hr class="border-top border-zinc-400 my-4" />
+        <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay bg-rosePine-rose text-rosePine-overlay text-100 px-2 rounded-full font-semibold tracking-wide mb-4">Published on {createdAt}</div>
+        <div class="text-4xl my-0 font-medium font-cabinet">{title}</div>
+        <div class="text-xl opacity-70">{description}</div>
         <slot />
       </Content>
     </main>

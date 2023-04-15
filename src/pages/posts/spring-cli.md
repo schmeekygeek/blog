@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 createdAt: July 20 2022
 tags:
   - Projects
-heroImage: /posts/spring-cli.png
+heroImage: spring-cli.png
 ---
 
 My name is abdul samad shaikh and i like to play football
