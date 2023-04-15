@@ -6,19 +6,7 @@ export interface Props {
 const { className = '' } = Astro.props
 ---
 
-<article 
-  class={`
-  prose-headings:dark:text-rosePine-text
-  prose-headings:text-rosePineDawn-text 
-  prose-headings:font-cabinet
-  prose-headings:font-semibold
-  prose-p:text-lg
-  prose-a:underline
-  prose-a:underline-offset-2
-  prose-a:decoration-rosePine-gold
-  px-8
-  mx-auto 
-  max-w-3xl
+<article class={`px-8 mx-auto max-w-3xl
   ${className}`}>
   <slot />
 </article>

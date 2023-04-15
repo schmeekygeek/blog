@@ -23,7 +23,7 @@ const { url, title, description, publishedOn, heroImage } = Astro.props;
     alt="Thumbnail"/>
 {
   typeof publishedOn != 'undefined' ? 
-  <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay bg-rosePine-rose text-rosePine-overlay text-100 px-2 rounded-full font-semibold tracking-wide mb-2">
+  <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay text-lg bg-rosePine-rose text-rosePine-overlay px-2 rounded-full font-semibold tracking-wide mb-2">
     Published on {publishedOn}
   </div>
   :

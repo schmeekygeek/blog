@@ -34,8 +34,8 @@ posts.splice(0, 1);
   <Body>
     <Header />
     <Masthead />
-    <main class="pt-[16px]">
-      <Content className="not-prose">
+    <main class="pt-4">
+      <Content>
         <section>
           <p class="text-xl">
             Welcome to my
@@ -71,7 +71,7 @@ posts.splice(0, 1);
           {
             projects.map((post) => {
               return (
-                <li class="text-center mx-8">
+                <li class="list-none text-center mx-8">
                   <BlogListTile
                     title={post.frontmatter.title}
                     description={post.frontmatter.description}
@@ -89,7 +89,7 @@ posts.splice(0, 1);
           {
             tutorials.map((post) => {
               return (
-                <li class="text-center mx-8">
+                <li class="list-none text-center mx-8">
                   <BlogListTile
                     title={post.frontmatter.title}
                     description={post.frontmatter.description}
@@ -108,7 +108,7 @@ posts.splice(0, 1);
           {
             casual.map((post) => {
               return (
-                <li class="text-center mx-8">
+                <li class="list-none text-center mx-8">
                   <BlogListTile
                     title={post.frontmatter.title}
                     description={post.frontmatter.description}
