@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 createdAt: Nov 20 2022
 tags:
   - Projects
-heroImage: qwotes.png
+heroImage: /posts/qwotes.png
 ---
 
 # H1

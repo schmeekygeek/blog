@@ -1,6 +1,7 @@
 ---
 import { Image } from '@astrojs/image/components';
 
+
 export interface Props {
   url: any;
   title: string;
@@ -14,9 +15,9 @@ const { url, title, description, publishedOn, heroImage } = Astro.props;
 <a href={url}>
   <Image
     class="mb-4 border border-slate-300 dark:border-zinc-700 rounded-xl" 
-    src={import(/* @vite-ignore */'../../public/posts/' + heroImage)} 
+    src={heroImage} 
     fit="fill"
-    format ='jpg' 
+    format ='png' 
     position='centre'
     height={680} 
     width={1100} 

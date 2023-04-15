@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 createdAt: July 20 2022
 tags:
   - Projects
-heroImage: spring-cli.png
+heroImage: /posts/spring-cli.png
 ---
 
 # Table of Contents

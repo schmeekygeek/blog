@@ -7,7 +7,7 @@ layout: ../../layouts/BlogPost.astro
 createdAt: April 14 2023
 tags:
   - Casual
-heroImage: why-i-use-dvorak.png
+heroImage: /posts/why-i-use-dvorak.png
 ---
 # A brief history of Dvorak
 Hello my name is abdul samad shaikh
