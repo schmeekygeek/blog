@@ -36,7 +36,7 @@ const posts = (await Astro.glob('../pages/posts/*.md'))
         <section>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4"> {
             posts.map(post => {
-              return <li class="text-center mx-auto">
+              return <li class="list-none text-center mx-auto">
                 <a href={post.url}>
                   <Image 
                     class="border border-slate-300 dark:border-zinc-700 rounded-xl" 
