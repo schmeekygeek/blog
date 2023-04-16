@@ -5,7 +5,6 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Body from "../components/Body.astro";
 import Masthead from "../components/Masthead.astro";
-import Content from "../components/Content.astro";
 import Head from "../components/Head.astro";
 import BlogListTile from "../components/BlogListTile.astro";
 
@@ -34,94 +33,92 @@ posts.splice(0, 1);
   <Body>
     <Header />
     <Masthead />
-    <main class="pt-4">
-      <Content>
-        <section>
-          <p class="text-xl">
-            Welcome to my
-            <span class="dark:text-rosePine-gold text-rosePineDawn-gold"
-              >Blog.</span
-            >
-            <br />
-            This is where I write about the
-            <span class="dark:text-rosePine-gold text-rosePineDawn-gold"
-              >projects</span
-            >
-            that I built, the lessons that I learned from building them,
-            <span class="dark:text-rosePine-gold text-rosePineDawn-gold"
-              >tutorials, guides</span
-            >
-            and other topics that I like to pen my thoughts on.
-          </p>
-        </section>
-        <br />
-        <section>
-          <Head>Latest Post</Head>
-          <BlogListTile
-            title={latestPost.frontmatter.title}
-            description={latestPost.frontmatter.description}
-            heroImage={latestPost.frontmatter.heroImage}
-            publishedOn={latestPost.frontmatter.createdAt}
-            url={latestPost.url}
-          />
-        </section>
-        <br />
-        <Head>Projects</Head>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {
-            projects.map((post) => {
-              return (
-                <li class="list-none text-center mx-8">
-                  <BlogListTile
-                    title={post.frontmatter.title}
-                    description={post.frontmatter.description}
-                    heroImage={post.frontmatter.heroImage}
-                    url={post.url}
-                  />
-                </li>
-              );
-            })
-          }
-        </ul>
-        <br />
-        <Head>Tutorials</Head>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {
-            tutorials.map((post) => {
-              return (
-                <li class="list-none text-center mx-8">
-                  <BlogListTile
-                    title={post.frontmatter.title}
-                    description={post.frontmatter.description}
-                    heroImage={post.frontmatter.heroImage}
-                    publishedOn={post.frontmatter.createdAt}
-                    url={post.url}
-                  />
-                </li>
-              );
-            })
-          }
-        </ul>
-        <br />
-        <Head>Casual talk</Head>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {
-            casual.map((post) => {
-              return (
-                <li class="list-none text-center mx-8">
-                  <BlogListTile
-                    title={post.frontmatter.title}
-                    description={post.frontmatter.description}
-                    heroImage={post.frontmatter.heroImage}
-                    publishedOn={post.frontmatter.createdAt}
-                    url={post.url}
-                  />
-                </li>
-              );
-            })
-          }
-        </ul>
-      </Content>
+    <main class="pt-4 px-8 mx-auto max-w-3xl">
+      <section>
+        <p class="text-xl">
+          Welcome to my
+          <span class="dark:text-rosePine-gold text-rosePineDawn-gold"
+            >Blog.</span
+          >
+          <br />
+          This is where I write about the
+          <span class="dark:text-rosePine-gold text-rosePineDawn-gold"
+            >projects</span
+          >
+          that I built, the lessons that I learned from building them,
+          <span class="dark:text-rosePine-gold text-rosePineDawn-gold"
+            >tutorials, guides</span
+          >
+          and other topics that I occasionally like to pen my thoughts on.
+        </p>
+      </section>
+      <br />
+      <section>
+        <Head>Latest Post</Head>
+        <BlogListTile
+          title={latestPost.frontmatter.title}
+          description={latestPost.frontmatter.description}
+          heroImage={latestPost.frontmatter.heroImage}
+          publishedOn={latestPost.frontmatter.createdAt}
+          url={latestPost.url}
+        />
+      </section>
+      <br />
+      <Head>Projects</Head>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          projects.map((post) => {
+            return (
+              <li class="list-none text-center mx-8">
+                <BlogListTile
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  heroImage={post.frontmatter.heroImage}
+                  url={post.url}
+                />
+              </li>
+            );
+          })
+        }
+      </ul>
+      <br />
+      <Head>Tutorials</Head>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          tutorials.map((post) => {
+            return (
+              <li class="list-none text-center mx-8">
+                <BlogListTile
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  heroImage={post.frontmatter.heroImage}
+                  publishedOn={post.frontmatter.createdAt}
+                  url={post.url}
+                />
+              </li>
+            );
+          })
+        }
+      </ul>
+      <br />
+      <Head>Casual talk</Head>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {
+          casual.map((post) => {
+            return (
+              <li class="list-none text-center mx-8">
+                <BlogListTile
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  heroImage={post.frontmatter.heroImage}
+                  publishedOn={post.frontmatter.createdAt}
+                  url={post.url}
+                />
+              </li>
+            );
+          })
+        }
+      </ul>
     </main>
     <Footer />
   </Body>
