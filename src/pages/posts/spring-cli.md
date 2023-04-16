@@ -27,8 +27,7 @@ I needed a handy tool to generate ***Spring Boot*** projects from my terminal an
 This script collects all relevant information required to initialize a ***Spring Boot*** project and makes an api call to [start.spring.io](https://start.spring.io) using [httpie](https://httpie.io) to download the zip file containing the project.
 
 ## Installation
-### Dependency
-* Httpie
+* ***Dependency*** Httpie
 ```bash
 $ npm install -g httpie
 ```
@@ -47,8 +46,6 @@ public class Example {
     }
 }
 ```
-
-<br />
 
 To uninstall, simply remove `spring-cli` from `/usr/bin/`
 ```bash

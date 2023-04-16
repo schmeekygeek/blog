@@ -1,52 +1,31 @@
 ---
-title: Why I use Dvorak
-description: My thoughts and experience on using the dvorak layout over 6 months
+title: Why I use dvorak
+description: The circumstances that led me to use the dvorak alternate keyboard layout
 slug: why-i-use-dvorak
 public: true
 layout: ../../layouts/BlogPost.astro
 createdAt: April 14 2023
 tags:
-  - Casual
+  - Miscellaneous
 heroImage: /posts/why-i-use-dvorak.png
 ---
+
 # A brief history of Dvorak
-Hello my name is abdul samad shaikh
+[Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout) is a keyboard layout which was designed by [August Dvorak](https://en.wikipedia.org/wiki/August_Dvorak) and his brother-in-law in the year 1936, aimed to be faster, more efficient and ergonomic than [QWERTY](https://en.wikipedia.org/wiki/QWERTY).
 
-## Secondary header (similar to HTML H2 tag)
-### Tertiary header (similar to HTML H3 tag)
-#### Quaternary header (similar to HTML H4 tag)
+It positions the most used keys of the english alphabet on the home-row[^1] of the keyboard, which reduces the distance the fingers need to reach to hit a key, consequently increasing speed.
 
-This is how you create **bold** text
-This is how you create *italic* text
-This is how you create ***bold italics*** text.
-This is how you create ~~strikethrough~~ text.
+In Dvorak, all the vowels are placed at the left hand's resting position, allowing for alternation, a technique where one finger or hand doesn't have to press a key repeatedly to type a sequence of characters.
 
-> This is a blockquote
+# The problem with qwerty
+QWERTY was supposedly designed for typewriters to solve a very specific problem – to keep the types from jamming against each other. The most frequently used keys were placed apart from each other to prevent them from jamming, resulting in a very non-ergonomic and inefficient layout.
+It was essentially designed to tackle a problem that no longer exists today in the modern world.
 
-1. Apples
-2. Bananas
-3. Peanut butter
+When Dvorak was introduced as an alternative, QWERTY had already cemented itself as the most popular keyboard layout, and the people, organizations, schools won't bother learning a new one because the established standard of QWERTY keyboards was good enough for their basic typing needs.
 
-1. Apples
-1. Bananas
-1. Peanut butter
+*(Try typing the word 'minimum' on your keyboard using the typical [touch-type method](https://en.wikipedia.org/wiki/Touch_typing), and you'll probably understand what I mean)*
 
-- Apples
-- Bananas
-- Peanut butter
+![Heatmap of QWERTY and Dvorak](/posts/dvorak-qwerty-heatmap.png)
+The above heatmap provides clear proof why QWERTY is a much worse layout than Dvorak
 
-- [x] Apples
-- [ ] Bananas
-- [ ] Peanut butter
-
-This is an inline-style link to our [markdown cheat sheet](/markdown-cheat-sheet).
-You can also create a relative link: [code repo](../repo/code)
-Or an absolute, inline-style link to [Google](https://google.com)
-URLs like <https://google.com>, and sometimes https://google.com
-or even google.com, get converted to clickable links.
-Inline-style link with a title attribute to [Markdown Land](https://markdown.land "Markdown Land")
-
-| Item         | Price | # In stock |
-|--------------|:-----:|-----------:|
-| Juicy Apples |  1.99 |        739 |
-| Bananas      |  1.89 |          6 |
+[^1]: The middle row of a modern-day keyboard

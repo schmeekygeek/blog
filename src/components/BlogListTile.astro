@@ -24,7 +24,7 @@ const { url, title, description, publishedOn, heroImage } = Astro.props;
     alt="Thumbnail"/>
 {
   typeof publishedOn != 'undefined' ? 
-  <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay text-lg bg-rosePine-rose text-rosePine-overlay px-2 rounded-full font-semibold tracking-wide mb-2">
+  <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay px-2 rounded-full font-semibold tracking-wide mb-2">
     Published on {publishedOn}
   </div>
   :
@@ -33,7 +33,7 @@ const { url, title, description, publishedOn, heroImage } = Astro.props;
   <div class="font-medium text-3xl font-cabinet">
     {title}
   </div>
-  <div class="opacity-70 text-lg">
+  <div class="opacity-70 text-lg font-normal">
     {description}
   </div>
 </a>

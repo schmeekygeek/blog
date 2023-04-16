@@ -4,8 +4,8 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&f[]=cabinet-grotesk@400,500,600,700&f[]=dancing-script@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;0,600;1,400&display=swap');
+@import url("https://api.fontshare.com/v2/css?f[]=gambetta@500,600,700,800&f[]=satoshi@400,500,600,700&f[]=cabinet-grotesk@400,500,600,700&f[]=dancing-script@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 body {
   font-family: 'Satoshi', sans-serif;

@@ -9,7 +9,8 @@ module.exports = {
         satoshi: ["Satoshi", "sans-serif"],
         cabinet: ["Cabinet Grotesk", "sans-serif"],
         dancing: ["Dancing Script", "sans-serif"],
-        chivo: ["Chivo Mono", "monospace"],
+        spacemono: ["Space Mono", "monospace"],
+        gambetta: ["Gambetta", "serif"],
       },
       colors: {
         rosePine: {

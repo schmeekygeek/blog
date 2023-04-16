@@ -4,7 +4,6 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import Body from '../components/Body.astro'
-import Content from '../components/Content.astro'
 import Masthead from '../components/Masthead.astro'
 import { FaExclamationTriangle } from 'react-icons/fa/index.js'
 ---
@@ -18,25 +17,23 @@ import { FaExclamationTriangle } from 'react-icons/fa/index.js'
     <Header title={SITE_TITLE} />
     <Masthead />
     <main class="px-8 mx-auto max-w-3xl">
-      <Content>
-        <section>
-          <h1 class="text-3xl text-center font-satoshi mt-12 mb-8">
-            <FaExclamationTriangle className="mb-4 items-center mx-auto content:justify-center text-center" size="50"/>
-            <span>
-              Oops, We can't find that.
-            </span>
-            <br />
-            <span>
-              Try something
-            </span>
-            <a href="/">
-            <span class="text-rosePineDawn-gold hover:text-rosePine-pine dark:text-rosePine-gold hover:dark:text-rosePineDawn-pine underline underline-offset-2">
-              else?
-            </span>
-            </a>
-          </h1>
-        </section>
-      </Content>
+      <section>
+        <h1 class="text-3xl text-center mt-12 mb-8">
+          <FaExclamationTriangle className="mb-4 items-center mx-auto content:justify-center text-center" size="50"/>
+          <span>
+            Oops, We can't find that.
+          </span>
+          <br />
+          <span>
+            Try something
+          </span>
+          <a href="/">
+          <span class="text-rosePineDawn-gold hover:text-rosePine-pine dark:text-rosePine-gold hover:dark:text-rosePineDawn-pine underline underline-offset-2">
+            else?
+          </span>
+          </a>
+        </h1>
+      </section>
     </main>
     <Footer />
   </Body>

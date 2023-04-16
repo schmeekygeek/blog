@@ -19,7 +19,7 @@ const projects = posts.filter((post) =>
 const tutorials = posts.filter((post) =>
   post.frontmatter.tags.includes("Tutorials")
 );
-const casual = posts.filter((post) => post.frontmatter.tags.includes("Casual"));
+const miscellaneous = posts.filter((post) => post.frontmatter.tags.includes("Miscellaneous"));
 
 const latestPost = posts[0];
 posts.splice(0, 1);
@@ -101,10 +101,10 @@ posts.splice(0, 1);
         }
       </ul>
       <br />
-      <Head>Casual talk</Head>
+      <Head>Miscellaneous</Head>
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {
-          casual.map((post) => {
+          miscellaneous.map((post) => {
             return (
               <li class="list-none text-center mx-8">
                 <BlogListTile
