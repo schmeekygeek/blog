@@ -26,7 +26,7 @@ const {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={`${SITE_TITLE} / ` + title } description={description} image={heroImage} />
+    <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
   <Body>
@@ -34,6 +34,9 @@ const {
     <main class="pt-10 mx-auto max-w-3xl">
       <Content>
         <div>
+          <div class="pt-10 text-4xl font-medium font-cabinet text-rosePineDawn-text dark:text-rosePine-text">{title}</div>
+          <div class="text-xl font-normal opacity-70">{description}</div>
+          <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay text-100 px-2 rounded-full font-semibold tracking-wide mt-2">Published on {createdAt}</div>
           <Image
             class="border border-slate-300 dark:border-zinc-700 rounded-xl"
             height={680} 
@@ -45,10 +48,6 @@ const {
             alt="Thumbnail"
           />
         </div>
-        <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay text-100 px-2 rounded-full font-semibold tracking-wide my-2">Published on {createdAt}</div>
-        <div class="text-4xl py-2 font-medium font-cabinet text-rosePineDawn-text dark:text-rosePine-text">{title}</div>
-        <div class="text-xl font-normal opacity-70">{description}</div>
-        <hr class="border-top border-zinc-400 my-8"/>
         <slot />
       </Content>
     </main>
