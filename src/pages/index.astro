@@ -13,6 +13,7 @@ const posts = (await Astro.glob("./posts/*.md")).sort(
     new Date(b.frontmatter.createdAt).valueOf() -
     new Date(a.frontmatter.createdAt).valueOf()
 );
+
 const projects = posts.filter((post) =>
   post.frontmatter.tags.includes("Projects")
 );
