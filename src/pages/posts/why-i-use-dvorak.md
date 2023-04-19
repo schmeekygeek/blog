@@ -33,9 +33,9 @@ Almost all vowels of the English alphabet is accessible by just the left hand's 
 
 When the Dvorak layout was introduced as an alternative, QWERTY had already cemented itself as the most popular keyboard layout, and the people, organizations, schools won't bother learning a new one because the established standard of QWERTY keyboards was good enough for their basic typing needs.
 
-> I am tired of trying to do something worthwhile for the human race, they simply don't want to change
+> *I am tired of trying to do something worthwhile for the human race, they simply don't want to change*
 
--- August Dvorak
+-- *August Dvorak*
 
 # My journey of switching to Dvorak
 I looked up ways to start learning Dvorak and came across [learn.dvorak.nl](https://learn.dvorak.nl), an online platform that provides 5 lessons that you can take to learn Dvorak.
@@ -63,9 +63,9 @@ I had essentially learned the Dvorak layout and had gotten quite good at it, whe
 It has modes such as `Normal` and `Insert`, where you can navigate between one, and edit text in another.
 There are other modes such as `Visual` and `Command` that let you select text and execute commands, respectively.
 
-Editing text was muscle memory for me. It was not like I had to think about the sequence of keys I needed to press to achieve a desired behavior. Deleting a line with `Shift-v` or `dd` for example, was something I never had to think about. I just went, I want to delete a line, do `Shift-v`. With dvorak, it felt really uncomfortable. I felt like I had to re-learn how to use Vim, to be able to use it with Dvorak.
+Editing text was muscle memory for me. It was not like I had to think about the sequence of keys I needed to press to achieve a desired behavior. Deleting a line with `Shift-v` or `dd` for example, was natural. I just went, I want to delete a line, do `Shift-v`. With dvorak, I just couldn't do it. I felt like I had to re-learn how to use Vim, to be able to use it with Dvorak.
 
-I was devastated. Having invested so much time trying to learn a new layout only to not be able to do the thing that I decided to learn it for in the first place. I tried looking at ways to map my Vim key bindings to QWERTY, such that I would be typing only my key bindings in QWERTY and every other text in Dvorak. But I soon realized that it would,
+I was devastated. Having invested so much time trying to learn a new layout only to not be able to do the thing that I decided to learn it for in the first place. I tried looking at ways to map my Vim key bindings to QWERTY, such that I'd be typing commands inside `Normal` mode using QWERTY and every other text in Dvorak. But I soon realized that it would,
 - Defeat the entire purpose of switching to Dvorak in the first place.
 - Be impossible to be able to use Dvorak outside of Vim in programs such as tmux.
 - Absolutely turn my brain into mush.
@@ -73,22 +73,22 @@ I was devastated. Having invested so much time trying to learn a new layout only
 I had to shake my head and walk away sadly.
 
 # What was next for me?
-I still was practicing Dvorak apart from work but continued to use QWERTY with Vim. Then I one day, I thought to my self, "What if I simply learn to use Vim with Dvorak?" *Duh.* Why didn't I think of that?
+I still was practicing Dvorak apart from work but continued to use QWERTY with Vim. Then one day, I thought to my self, "What if I simply learn to use Vim with Dvorak?" *Duh.* Why didn't I think of that?
 
 ![duh](/posts/willem-duh.gif)
 
-Just kidding. I thought about learning it, but felt so lazy that I decided to find ways to go around it, until I realized, that,
-> I simply can't let how I feel dictate what I do in life.
+Just kidding. I considered learning it, but felt so lazy that I decided to find ways to go around it, until I realized, that,
+> *I simply can't let how I feel dictate what I do in life.*
 
--- Me, professional retard
+-- *Me, professional retard*
 
 # Vim with Dvorak
 
 I stumbled across a Vim plugin written by [ThePrimeagen](https://twitter.com/ThePrimeagen)[^3] called [VimBeGood](https://github.com/ThePrimeagen/vim-be-good) intended to help developers practice using Vim by playing games such as *whack-a-mole*.
-It was the perfect program for my use-case. I starting practing Vim with Dvorak on it. There were a few rough bumps on the road but with VimBeGood, I managed to learn almost all my key bindings and got quite good at it.
+It was the perfect program for my use-case. I starting practing Vim with Dvorak on it. There were a few rough bumps on the road but with VimBeGood, I managed to learn quite a few key bindings and got quite good at it.
 I felt confident on using Dvorak with Vim.
 
-It was a very liberating feeling, because I was always under this regret that I had wasted my time trying to learn a new layout, all to just keep it aside forever. I started seeing light at the end of the tunnel, my eyes glistening with teardrops, as I try and contain my emotions. My journey was complete.
+It was a very liberating feeling, because I was always under this regret that I had wasted my time trying to learn a new layout, all to just keep it aside forever. I started seeing light at the end of the tunnel, my eyes glistened with teardrops with my lips writhering as I try and contain my emotions. My journey was complete.
 
 [^1]: The middle row of a modern-day keyboard
 [^2]: A powerful terminal based text editor that forces you to use just the keyboard for editing text
