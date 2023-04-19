@@ -10,14 +10,16 @@ tags:
 heroImage: /posts/spring-cli.png
 ---
 
+[Link to GitHub repository](https://github.com/schmeekygeek/spring-cli)
+
 # Table of Contents
-- [About](#About)
-- [Working](#Working)
-- [Install](#Installation)
-- [Usage](#Usage)
-- [Side Notes](#Notes)
-- [Contributing](#Contributing)
-- [License](#License)
+- [About](#about)
+- [Working](#working)
+- [Install](#installation)
+- [Usage](#usage)
+- [Side Notes](#notes)
+- [Contributing](#contributing)
+- [License](#license)
 
 # About
 

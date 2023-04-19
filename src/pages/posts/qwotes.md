@@ -10,4 +10,4 @@ tags:
 heroImage: /posts/qwotes.png
 ---
 
-# Coming soon
+[Link to GitHub repository](https://github.com/schmeekygeek/qwotes)
