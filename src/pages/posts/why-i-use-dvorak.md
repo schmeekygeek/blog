@@ -1,5 +1,5 @@
 ---
-title: Why I use dvorak
+title: My journey of switching to Dvorak
 description: The circumstances that led me to use the dvorak alternate keyboard layout and the challenges I faced
 slug: why-i-use-dvorak
 public: true
@@ -73,7 +73,7 @@ I was devastated. Having invested so much time trying to learn a new layout only
 I had to shake my head and walk away sadly.
 
 # What was next for me?
-I still was practicing Dvorak apart from work but continued to use QWERTY with Vim. Then one day, I thought to my self, "What if I simply learn to use Vim with Dvorak?" *Duh.* Why didn't I think of that?
+I still was practicing Dvorak apart from work but continued to use QWERTY with Vim. Then one day, I thought to myself, "What if I simply learn to use Vim with Dvorak?" *Duh.* Why didn't I think of that?
 
 ![duh](/posts/willem-duh.gif)
 
@@ -85,7 +85,7 @@ Just kidding. I considered learning it, but felt so lazy that I decided to find 
 # Vim with Dvorak
 
 I stumbled across a Vim plugin written by [ThePrimeagen](https://twitter.com/ThePrimeagen)[^3] called [VimBeGood](https://github.com/ThePrimeagen/vim-be-good) intended to help developers practice using Vim by playing games such as *whack-a-mole*.
-It was the perfect program for my use-case. I starting practing Vim with Dvorak on it. There were a few rough bumps on the road but with VimBeGood, I managed to learn quite a few key bindings and got quite good at it.
+It was the perfect program for my use-case. I starting practicing Vim with Dvorak on it. There were a few rough bumps on the road but with VimBeGood, I managed to learn quite a few key bindings and got quite good at it.
 I felt confident on using Dvorak with Vim.
 
 It was a very liberating feeling, because I was always under this regret that I had wasted my time trying to learn a new layout, all to just keep it aside forever. I started seeing light at the end of the tunnel, my eyes glistened with teardrops with my lips writhering as I try and contain my emotions. My journey was complete.
