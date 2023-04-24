@@ -10,7 +10,7 @@ module.exports = {
         cabinet: ["Cabinet Grotesk", "sans-serif"],
         dancing: ["Dancing Script", "sans-serif"],
         spacemono: ["Space Mono", "monospace"],
-        gambetta: ["Gambetta", "serif"],
+        zodiak: ["Zodiak", "serif"],
       },
       colors: {
         rosePine: {

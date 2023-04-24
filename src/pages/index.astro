@@ -7,6 +7,7 @@ import Body from "../components/Body.astro";
 import Masthead from "../components/Masthead.astro";
 import Head from "../components/Head.astro";
 import BlogListTile from "../components/BlogListTile.astro";
+import { IoLogoGithub } from "react-icons/io5/index.js";
 
 const posts = (await Astro.glob("./posts/*.md")).sort(
   (a: any, b: any) =>
@@ -34,8 +35,15 @@ posts.splice(0, 1);
   <Body>
     <Header />
     <Masthead />
-    <main class="pt-4 px-8 mx-auto max-w-3xl">
+    <main class="pt-2 px-8 mx-auto max-w-3xl">
       <section>
+        <a 
+          href="https://github.com/schmeekygeek/blog"
+          class="hover:dark:decoration-rosePine-pine hover:decoration-rosePine-pine text-lg inline-flex align-middle items-center mb-2 underline underline-offset-1 decoration-rosePineDawn-gold dark:decoration-rosePine-gold"
+        >
+          <IoLogoGithub className="mr-1"/>
+          View source
+        </a>
         <p class="text-xl">
           Welcome to my
           <span class="dark:text-rosePine-gold text-rosePineDawn-gold"
