@@ -1,5 +1,6 @@
 ---
 import { Image } from '@astrojs/image/components';
+import { IoCalendarOutline } from 'react-icons/io5/index.js';
 
 
 export interface Props {
@@ -10,11 +11,17 @@ export interface Props {
   heroImage: string;
 }
 
-const { url, title, description, publishedOn, heroImage } = Astro.props;
+const {
+  url,
+  title,
+  description,
+  publishedOn,
+  heroImage,
+} = Astro.props;
 ---
-<a href={url}>
+<div class="justify-left mb-4 border dark:border-rosePine-iris border-rosePineDawn-iris rounded-xl">
   <Image
-    class="mb-4 border border-slate-300 dark:border-zinc-700 rounded-xl" 
+    class="rounded-t-xl" 
     src={heroImage} 
     fit="fill"
     format ='png' 
@@ -22,18 +29,24 @@ const { url, title, description, publishedOn, heroImage } = Astro.props;
     height={680} 
     width={1100} 
     alt="Thumbnail"/>
-{
-  typeof publishedOn != 'undefined' ? 
-  <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay px-2 rounded-full font-semibold tracking-wide mb-2">
-    Published on {publishedOn}
+  <div class="p-4">
+    <a href={url}>
+      {
+      typeof publishedOn != 'undefined' ? 
+        <div class="inline-flex align-middle items-center font-zodiak">
+          <span>
+            <IoCalendarOutline className="mr-2"/>
+          </span>
+          {publishedOn}
+          
+        </div> : <section />
+      }
+      <div class="font-medium text-3xl font-cabinet">
+        {title}
+      </div>
+      <div class="opacity-70 text-lg font-normal">
+        {description}
+      </div>
+    </a>
   </div>
-  :
-  <section />
-  }
-  <div class="font-medium text-3xl font-cabinet">
-    {title}
-  </div>
-  <div class="opacity-70 text-lg font-normal">
-    {description}
-  </div>
-</a>
+</div>

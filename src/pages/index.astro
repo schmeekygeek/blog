@@ -78,11 +78,12 @@ posts.splice(0, 1);
         {
           projects.map((post) => {
             return (
-              <li class="list-none text-center mx-8">
+              <li class="list-none mx-8">
                 <BlogListTile
                   title={post.frontmatter.title}
                   description={post.frontmatter.description}
                   heroImage={post.frontmatter.heroImage}
+                  publishedOn={latestPost.frontmatter.createdAt}
                   url={post.url}
                 />
               </li>
@@ -96,7 +97,7 @@ posts.splice(0, 1);
         {
           tutorials.map((post) => {
             return (
-              <li class="list-none text-center mx-8">
+              <li class="list-none mx-8">
                 <BlogListTile
                   title={post.frontmatter.title}
                   description={post.frontmatter.description}
@@ -115,7 +116,7 @@ posts.splice(0, 1);
         {
           miscellaneous.map((post) => {
             return (
-              <li class="list-none text-center mx-8">
+              <li class="list-none mx-8">
                 <BlogListTile
                   title={post.frontmatter.title}
                   description={post.frontmatter.description}

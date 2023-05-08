@@ -5,7 +5,6 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 import Header from '../components/Header.astro';
 import Masthead from '../components/Masthead.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import Content from '../components/Content.astro';
 import BlogListTile from '../components/BlogListTile.astro';
 import Footer from '../components/Footer.astro';
 
@@ -34,9 +33,9 @@ const posts = (await Astro.glob('../pages/posts/*.md'))
     <main class="pt-4 px-8 mx-auto max-w-3xl">
         <Breadcrumb>{category}</Breadcrumb>
         <section>
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-8"> {
+          <ul class="grid grid-cols-1 gap-8"> {
             posts.map(post => {
-              return <li class="list-none text-center mx-8">
+              return <li class="list-none mx-8">
                 <BlogListTile
                   title={post.frontmatter.title}
                   description={post.frontmatter.description}
