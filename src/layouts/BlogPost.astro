@@ -6,6 +6,7 @@ import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
 import { SITE_TITLE } from '../consts'
 import { Image } from '@astrojs/image/components'
+import { IoCalendarOutline } from 'react-icons/io5/index.js';
 
 export interface Props {
   content: {
@@ -35,8 +36,6 @@ const {
       <Content>
         <div>
           <div class="pt-10 text-4xl font-medium font-cabinet text-rosePineDawn-text dark:text-rosePine-text">{title}</div>
-          <div class="text-xl font-normal opacity-70">{description}</div>
-          <div class="antialiased inline-block bg-rosePine-rose text-rosePine-overlay text-100 px-2 rounded-full font-semibold tracking-wide mt-2">Published on {createdAt}</div>
           <Image
             class="border border-slate-300 dark:border-zinc-700 rounded-xl"
             height={680} 
@@ -47,7 +46,15 @@ const {
             src={heroImage} 
             alt="Thumbnail"
           />
+          <div class="inline-flex align-middle items-center font-zodiak">
+            <span>
+              <IoCalendarOutline className="mr-2"/>
+            </span>
+            {createdAt}
+          </div>
+          <div class="text-xl font-normal opacity-70">{description}</div>
         </div>
+        <hr class="border-top border-zinc-400 my-4" />
         <slot />
       </Content>
     </main>

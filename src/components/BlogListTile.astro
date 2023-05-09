@@ -19,18 +19,20 @@ const {
   heroImage,
 } = Astro.props;
 ---
-<div class="justify-left mb-4 border dark:border-rosePine-iris border-rosePineDawn-iris rounded-xl">
-  <Image
-    class="rounded-t-xl" 
-    src={heroImage} 
-    fit="fill"
-    format ='png' 
-    position='centre'
-    height={680} 
-    width={1100} 
-    alt="Thumbnail"/>
-  <div class="p-4">
-    <a href={url}>
+
+<a href={url}>
+  <div class="justify-left mb-4 border dark:border-rosePine-iris border-rosePineDawn-iris rounded-xl">
+    <Image
+      class="rounded-t-xl" 
+      src={heroImage} 
+      fit="fill"
+      format ='png' 
+      position='centre'
+      height={680} 
+      width={1100} 
+      alt="Thumbnail"/>
+    <div class="p-4">
+
       {
       typeof publishedOn != 'undefined' ? 
         <div class="inline-flex align-middle items-center font-zodiak">
@@ -38,7 +40,7 @@ const {
             <IoCalendarOutline className="mr-2"/>
           </span>
           {publishedOn}
-          
+
         </div> : <section />
       }
       <div class="font-medium text-3xl font-cabinet">
@@ -47,6 +49,7 @@ const {
       <div class="opacity-70 text-lg font-normal">
         {description}
       </div>
-    </a>
+
+    </div>
   </div>
-</div>
+</a>
