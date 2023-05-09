@@ -1,22 +1,33 @@
 ---
 import { IoLogoReact } from "react-icons/io5/index.js";
-import { SiAstro } from "react-icons/si/index.js";
+import { BsDot } from 'react-icons/bs/index.js';
+import { SiAstro, SiTailwindcss } from "react-icons/si/index.js";
 const today = new Date();
 ---
 
-<footer class="text-rosePine-text bg-rosePine-overlay p-8 text-center">
-  <div class="align-middle text-2xl font-cabinet text-center inline-flex items-center">
-    Built using
-    <a href="https://astro.build" class="mr-1 items-center inline-flex p-1 align-middle underline underline-offset-1 decoration-2 text-orange-400 hover:transform">
-      <SiAstro />
-      Astro
-    </a>
-    &
-    <a href="https://reactjs.org" class="items-center inline-flex p-1 align-middle underline underline-offset-1 decoration-2 text-blue-400 hover:transform">
-      <IoLogoReact />
-      React
-    </a>
-  </div>
+<footer class="text-rosePine-text bg-rosePine-overlay p-8 pt-2 text-center">
   <br />
-	&copy; {today.getFullYear()} <a href="/"> Abdul Samad Shaikh. All rights reserved.</a>
+  <div class="mx-auto max-w-3xl text-2xl font-cabinet font-medium pt-2 pb-2">
+    Built using,
+    <br />
+    <div class="inline-flex items-center content-center flex-center">
+      <a href="https://astro.build" class="inline-flex items-center text-orange-400">
+        <SiAstro />
+        Astro
+      </a>
+      <BsDot />
+      <a href="https://reactjs.org" class="inline-flex items-center text-blue-400">
+        <IoLogoReact />
+        React
+      </a>
+      <BsDot />
+      <a href="https://tailwindcss.com" class="inline-flex items-center text-cyan-400">
+        <SiTailwindcss />
+        Tailwindcss
+      </a>
+    </div>
+  </div>
+  <div class="text-zinc-400">
+    &copy; {today.getFullYear()} <a href="/"> Abdul Samad Shaikh. All rights reserved.</a>
+  </div>
 </footer>
