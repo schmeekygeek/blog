@@ -14,7 +14,7 @@ As a programmer, I have to type a lot and suffer from [Repetitive Strain Injury 
 I considered other options such as Colemak, but chose Dvorak because it was good enough, and it was natively available in many operating systems.
 
 # The problem with QWERTY
-QWERTY was supposedly designed for typewriters to solve a very specific problem – to keep the keys from jamming against each other. The most frequently used keys were placed apart from each other to prevent them from jamming, resulting in a very non-ergonomic and inefficient layout.
+QWERTY was supposedly designed for typewriters to solve a very specific problem – to keep the keys from jamming against each other. The most frequently used keys were placed apart from each other to prevent them from jamming, resulting in a very non-ergonomic and inefficient layout.[^1]
 It was essentially designed to tackle a problem that no longer exists today in the modern world.
 
 ![Heatmap of QWERTY and Dvorak](/posts/dvorak-qwerty-heatmap.png)
@@ -23,7 +23,7 @@ The above heatmap is proof why QWERTY was never meant to be ergonomic
 # A brief history of the Dvorak keyboard
 [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout) is a keyboard layout which was designed by [August Dvorak](https://en.wikipedia.org/wiki/August_Dvorak), an American educational psychologist and professor with his brother-in-law in the year 1936, aimed to be faster, more efficient and ergonomic than [QWERTY](https://en.wikipedia.org/wiki/QWERTY).
 
-It positions the most used keys of the english alphabet on the home-row[^1] of the keyboard, which reduces the distance the fingers need to reach to hit a key, consequently increasing speed.
+It positions the most used keys of the english alphabet on the home-row of the keyboard, which reduces the distance the fingers need to reach to hit a key, consequently increasing speed.
 
 Almost all vowels of the English alphabet is accessible by just the left hand's resting position, allowing for alternation, a technique where one finger or hand doesn't have to press a key repeatedly to type a sequence of characters.
 
@@ -31,7 +31,7 @@ Almost all vowels of the English alphabet is accessible by just the left hand's 
 
 # Why the Dvorak keyboard couldn't take over
 
-When the Dvorak layout was introduced as an alternative, QWERTY had already cemented itself as the most popular keyboard layout, and the people, organizations, schools won't bother learning a new one because the established standard of QWERTY keyboards was good enough for their basic typing needs.
+When the Dvorak layout was introduced as an alternative, QWERTY had already cemented itself as the most popular keyboard layout, and the people, organizations, schools won't bother learning a new one because the established standard of QWERTY keyboards was good enough for their basic typing needs.[^2]
 
 > *I am tired of trying to do something worthwhile for the human race, they simply don't want to change*
 
@@ -58,7 +58,7 @@ After completing all other lessons, I could now type the entire Roman alphabet i
 I started using it all the time in my daily tasks. It was an amazing feeling. I loved how comfortable and fast it felt. Just when I was actually enjoying typing in it, was when reality started to set in.
 
 # The huge setback
-I had essentially learned the Dvorak layout and had gotten quite good at it, when I realized, that using [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor))[^2] would not be as easy as I thought it would be. Vim is a terminal based text editor, highly optimized for editing code, that forces you to use just the keyboard, making you more productive and saving time.
+I had essentially learned the Dvorak layout and had gotten quite good at it, when I realized, that using [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) would not be as easy as I thought it would be. Vim is a terminal based text editor, highly optimized for editing code, that forces you to use just the keyboard, making you more productive and saving time.
 
 It has modes such as `Normal` and `Insert`, where you can navigate between one, and edit text in another.
 There are other modes such as `Visual` and `Command` that let you select text and execute commands, respectively.
@@ -84,12 +84,11 @@ Just kidding. I considered learning it, but felt so lazy that I decided to find 
 
 # Vim with Dvorak
 
-I stumbled across a Vim plugin written by [ThePrimeagen](https://twitter.com/ThePrimeagen)[^3] called [VimBeGood](https://github.com/ThePrimeagen/vim-be-good) intended to help developers practice using Vim by playing games such as *whack-a-mole*.
-It was the perfect program for my use-case. I starting practicing Vim with Dvorak on it. There were a few rough bumps on the road but with VimBeGood, I managed to learn quite a few key bindings and got quite good at it.
+I stumbled across a Vim plugin written by [ThePrimeagen](https://twitter.com/ThePrimeagen) called [VimBeGood](https://github.com/ThePrimeagen/vim-be-good) intended to help developers practice using by playing games such as *whack-a-mole*.
+It was the perfect program for my use-case. I practicing Vim with Dvorak on it. There were a few rough bumps on the road but with VimBeGood, I managed to learn quite a few key bindings and got quite good at it.
 I felt confident on using Dvorak with Vim.
 
-It was a very liberating feeling, because I was always under this regret that I had wasted my time trying to learn a new layout, all to just keep it aside forever. I started seeing light at the end of the tunnel, my eyes glistened with teardrops with my lips writhering as I try and contain my emotions. My journey was complete.
+It was a very liberating feeling, because I was always under this regret that I had wasted my time trying to learn a new layout, all to just keep it aside forever. I started seeing light at the end of the tunnel, my eyes glistened with teardrops as my lips writhered while I tried to contain my emotions. My journey was complete.
 
-[^1]: The middle row of a modern-day keyboard
-[^2]: A powerful terminal based text editor that forces you to use just the keyboard for editing text
-[^3]: Engineer at Netflix, content creator on Twitch and YouTube.
+[^1]: [WikiPedia QWERTY](https://en.wikipedia.org/wiki/QWERTY)
+[^2]: [WikiPedia Dvorak](https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k)
