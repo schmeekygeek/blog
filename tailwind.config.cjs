@@ -13,6 +13,7 @@ module.exports = {
         zodiak: ["Zodiak", "serif"],
       },
       colors: {
+        codebg: "#0d1117",
         rosePine: {
           base: "#191724",
           surface: "#1f1d2e",
