@@ -90,5 +90,5 @@ I felt confident on using Dvorak with Vim.
 
 It was a very liberating feeling, because I was always under this regret that I had wasted my time trying to learn a new layout, all to just keep it aside forever. I started seeing light at the end of the tunnel, my eyes glistened with teardrops as my lips writhered while I tried to contain my emotions. My journey was complete.
 
-[^1]: [WikiPedia QWERTY](https://en.wikipedia.org/wiki/QWERTY)
-[^2]: [WikiPedia Dvorak](https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k)
+[^1]: [Wikipedia QWERTY](https://en.wikipedia.org/wiki/QWERTY)
+[^2]: [Wikipedia Dvorak](https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k)
