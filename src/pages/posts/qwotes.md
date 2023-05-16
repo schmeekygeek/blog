@@ -20,7 +20,7 @@ heroImage: /posts/qwotes.png
 # Working
 `Qwotes` makes a `GET` request to [api.quotable.io/random](https://api.quotable.io), the `random` endpoint to get a random quote, then parses the response body using `jq` to take the quote and its author and places it in two text files, called `author.txt`, and `qwote.txt` in the `~/.cache` directory.
 
-Then the following code to be put in `~/.bashrc` reads from the text file and displays it on the terminal everytime the shell is sourced i.e started.
+Then the following code to be put in `~/.bashrc` reads from the text files and displays it on the terminal everytime the shell is sourced i.e started.
 ```bash
 echo
 echo -en "${RED}\e[3m❤ $(cat ~/.cache/qwote.txt) ❤\e[0m${NC}"
