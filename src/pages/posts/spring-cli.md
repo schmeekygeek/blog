@@ -41,14 +41,6 @@ $ chmod +x spring-cli
 $ sudo cp spring-cli ~/.local/bin/
 ```
 
-```java
-public class Example {
-    public static void main(String[] args) {
-        System.out.println("Hello world");
-    }
-}
-```
-
 To uninstall, simply remove `spring-cli` from `/usr/bin/`
 ```bash
 $ sudo rm ~/.local/bin/spring-cli
