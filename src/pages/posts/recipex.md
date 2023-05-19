@@ -1,6 +1,6 @@
 ---
 title: RecipEx
-description: Free to use app to read recipes of your favorite dishes
+description: Recipe Expert, a free to use recipe app
 slug: recipex
 public: true
 layout: ../../layouts/BlogPost.astro
@@ -10,12 +10,21 @@ tags:
 heroImage: /posts/recipex.png
 ---
 
-[Download the apk](/posts/recipex.apk)
+[Download the apk](https://github.com/schmeekygeek/recipex/releases)
 
-RecipEx is a free to use app to read recipes of your favorite dishes, aiming to provide an easy to use user-interface and pleasant reading experience.
+***RECIPE*** e***X***pert is a free to use app to read recipes of your favorite dishes, aiming to provide an easy to use user-interface and pleasant reading experience.
 
 # Credits
-RecipEx uses [TheMealDB's REST api](https://themealdb.com/api) for fetching recipes based on categories, ids, and queries.
+RecipEx uses [TheMealDB's REST api](https://themealdb.com) for fetching recipes based on categories, ids, and queries.
+
+# Features
+Here are some of the features of RecipEx:
+- Light and Dark theme
+- Like/bookmark recipes to view them later
+- Easily sync your data across multiple devices
+- View your last opened recipe to pick up from where you left off
+- Get a new recipe of the day, everyday
+- View recipes belonging to various categories such as breakfast, starters, etc
 
 # Tech-stack
 RecipEx is built using the following technologies:
@@ -30,13 +39,15 @@ RecipEx's development started on the *6th of December, 2022*, and is a personal 
 RecipEx was originally meant to be an open-source application, but couldn't quite end up being one.
 The reason is that I accidentally ended up chucking important, confidential details to source control, that I don't want to be revealing to every Bob and their grandma.
 
-*Q. Well, you could just add it to the `.gitignore` file dumb-dumb.*
+*Q. Well, can't you just add it to the `.gitignore` file? Stoopid?*
 
-I could, but the damage was already done, as I committed those files meaning that anyone viewing the repository will have the unwanted privilege of browsing the source-code from a past commit, and quite possibly read my credentials, given to them.
+I could, but the damage is done, as I committed those files meaning that anyone viewing the repository will have the unwanted privilege of browsing the source-code from a past commit, and quite possibly read my credentials, given to them.
 
 In order to truly get rid of the possibility that people could view these credentials, I will have to rewrite my entire git repository history from scratch, or create and maintain two different repositories, which, to be honest, seems like a lot of work.
 
-Or maybe I'm just missing out on something completely life-saving that would help make RecipEx open-source because I am, by no means, smart enough to understand how everything here works.
+Or maybe I'm just missing out on something completely life-saving that would help make RecipEx open-source because I am, by no means, smart enough to understand how everything here works. Until then RecipEx stays closed source. 
+
+*Don't worry, I won't spy on you. I absolutely do not care about what brand of cat food you might be using to feed your cats.*
 
 # The Backend
 I originally intended to have my own backend for RecipEx, but after a lot of mistakes, bad decisions and hopping from one backend solution to another, I finally decided to stick with Firebase, for the sake of my sanity.
