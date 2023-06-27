@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
 const plugin = require("tailwindcss/plugin");
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   darkMode: "class",
@@ -7,10 +10,10 @@ module.exports = {
     extend: {
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
-        cabinet: ["Cabinet Grotesk", "sans-serif"],
         dancing: ["Dancing Script", "sans-serif"],
         spacemono: ["Space Mono", "monospace"],
         zodiak: ["Zodiak", "serif"],
+        dosis: ["dosis", "sans-serif", ...defaultTheme.fontFamily.sans]
       },
       colors: {
         codebg: "#0d1117",

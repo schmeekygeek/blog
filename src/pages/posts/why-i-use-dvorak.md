@@ -33,7 +33,7 @@ Almost all vowels of the English alphabet is accessible by just the left hand's 
 
 When the Dvorak layout was introduced as an alternative, QWERTY had already cemented itself as the most popular keyboard layout, and the people, organizations, schools won't bother learning a new one because the established standard of QWERTY keyboards was good enough for their basic typing needs.[^2]
 
-> *I am tired of trying to do something worthwhile for the human race, they simply don't want to change*
+> I am tired of trying to do something worthwhile for the human race, they simply don't want to change
 
 -- *August Dvorak*
 
@@ -78,9 +78,9 @@ I still was practicing Dvorak apart from work but continued to use QWERTY with V
 ![duh](/posts/willem-duh.gif)
 
 Just kidding. I considered learning it, but felt so lazy that I decided to find ways to go around it, until I realized, that,
-> *I simply can't let how I feel dictate what I do in life.*
+> I simply can't let how I feel dictate what I do in life.
 
--- *Me, professional retard*
+-- Me, professional retard
 
 # Vim with Dvorak
 
