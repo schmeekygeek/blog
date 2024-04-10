@@ -10,6 +10,8 @@ tags:
 heroImage: /posts/qwotes.png
 ---
 
+[Link to GitHub repository](https://github.com/schmeekygeek/qwotes)
+
 `Qwotes` is a simple bash script to display quotes on terminal startup (or anywhere!). For instructions regarding installation, read the README from the [repository](https://github.com/schmeekygeek/qwotes).
 
 # Dependencies
