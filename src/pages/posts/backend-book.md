@@ -4,7 +4,7 @@ description: A book for beginners to learn about the basics of backend developme
 slug: backend-book
 public: true
 layout: ../../layouts/BlogPost.astro
-createdAt: Apr 16 2024
+createdAt: April 16 2024
 tags:
   - Projects
 heroImage: /posts/backend-book-cover.png
